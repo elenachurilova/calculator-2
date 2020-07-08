@@ -10,25 +10,43 @@ while True:
 
     tokens = user_input.split(" ")
 
-    func = tokens[0]
-    num1 = tokens[1]
-    num2 = tokens[2]
 
     if tokens[0] == "q":
         print("You requested to exit...")
 
-    else:
-        if func == "+":
-            print((float(num1)) + (float(num2)))
 
-        if func == "-":
-            print((float(num1)) - (float(num2)))
+    #Handling cases when user only need to enter 2 pieces of equasion
+    if len(tokens) < 3:
 
-        if func == "*":
-            print((float(num1)) * (float(num2)))
+        func = tokens[0]
+        num1 = tokens[1]
 
-        if func == "/":
-            print((float(num1)) / (float(num2)))            
+    #For cases when there should be 3 pieces of equasion
+    if len(tokens) == 3:
+
+        func = tokens[0]
+        num1 = tokens[1]
+        num2 = tokens[2]
+
+    #All operator functions - complete logic:
+    if func == "+":
+        print((float(num1)) + (float(num2)))
+
+    if func == "-":
+        print((float(num1)) - (float(num2)))
+
+    if func == "*":
+        print((float(num1)) * (float(num2)))
+
+    if func == "/":
+        print((float(num1)) / (float(num2)))      
+
+    if func == "square":
+        print((float(num1)) ** 2)
+
+    if func == "cube":
+        print((float(num1)) ** 3)
+
 
 
 # Replace this with your code
