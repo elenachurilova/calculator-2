@@ -24,4 +24,8 @@ while True:
         if func == "-":
             print((float(num1)) - (float(num2)))
 
+        if func == "*":
+            print((float(num1)) * (float(num2)))
+
+
 # Replace this with your code
