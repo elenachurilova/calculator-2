@@ -10,10 +10,9 @@ while True:
 
     tokens = user_input.split(" ")
 
-
-    if tokens[0] == "q":
+    if "q" in tokens:
         print("You requested to exit...")
-
+        break
 
     #Handling cases when user only need to enter 2 pieces of equasion
     if len(tokens) < 3:
