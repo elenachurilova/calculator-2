@@ -47,6 +47,9 @@ while True:
     if func == "cube":
         print((float(num1)) ** 3)
 
+    if func == "pow":
+        # print(tokens)
+        print(pow(float(num1),float(num2)))
 
 
 # Replace this with your code
